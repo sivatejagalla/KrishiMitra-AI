@@ -1,0 +1,10 @@
+{
+  "name": "agrolith-frontend",
+  "version": "1.0.0",
+  "description": "Agrolith-AI Production Web App",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Building Agrolith-AI Frontend Web App...'",
+    "start": "serve ."
+  }
+}

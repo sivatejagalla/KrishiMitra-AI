@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 780" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+
+    <!-- Header Gradient -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="50%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#4CAF50"/>
+    </linearGradient>
+
+    <!-- Client Box Gradient -->
+    <linearGradient id="clientGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F6FEB"/>
+      <stop offset="100%" stop-color="#1158C7"/>
+    </linearGradient>
+
+    <!-- WhatsApp Box Gradient -->
+    <linearGradient id="waGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#25D366"/>
+      <stop offset="100%" stop-color="#128C7E"/>
+    </linearGradient>
+
+    <!-- Backend Box Gradient -->
+    <linearGradient id="backendGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="100%" stop-color="#196C2E"/>
+    </linearGradient>
+
+    <!-- Service Box Gradient -->
+    <linearGradient id="serviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#30363D"/>
+      <stop offset="100%" stop-color="#21262D"/>
+    </linearGradient>
+
+    <!-- AI Box Gradient -->
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8957E5"/>
+      <stop offset="100%" stop-color="#6E40C9"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1050" height="780" fill="url(#bgGradient)"/>
+  
+  <!-- Outer Glow Border -->
+  <rect x="10" y="10" width="1030" height="760" rx="16" fill="none" stroke="#30363D" stroke-width="2"/>
+
+  <!-- Top Title Header -->
+  <rect x="25" y="25" width="1000" height="60" rx="12" fill="url(#headerGrad)" filter="url(#shadow)"/>
+  <text x="525" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    🌾 Agrolith-AI — Production System Architecture
+  </text>
+
+  <!-- ── LAYER 1: CLIENT ACCESS CHANNELS ──────────────────────────────────────── -->
+  <g filter="url(#shadow)">
+    <!-- Container Box -->
+    <rect x="40" y="110" width="970" height="110" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+    <text x="60" y="132" font-family="sans-serif" font-size="12" font-weight="bold" fill="#8B949E" letter-spacing="1">
+      CLIENT & ACCESS CHANNELS LAYER
+    </text>
+
+    <!-- Flutter Mobile App -->
+    <rect x="60" y="145" width="430" height="60" rx="10" fill="url(#clientGrad)"/>
+    <text x="80" y="172" font-family="sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">📱 Flutter 3 Mobile App</text>
+    <text x="80" y="191" font-family="sans-serif" font-size="11" fill="#E6EDF3">Material 3 • Riverpod • GoRouter • Hive Offline Cache • Dio API</text>
+
+    <!-- WhatsApp Bot -->
+    <rect x="560" y="145" width="430" height="60" rx="10" fill="url(#waGrad)"/>
+    <text x="580" y="172" font-family="sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">💬 WhatsApp AI Assistant</text>
+    <text x="580" y="191" font-family="sans-serif" font-size="11" fill="#E6EDF3">Meta WhatsApp Cloud API • Webhook • Text / Images / Voice Notes</text>
+  </g>
+
+  <!-- Connection Arrows Down (Layer 1 -> Layer 2) -->
+  <path d="M 275 220 L 275 260" stroke="#58A6FF" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="285" y="245" font-family="sans-serif" font-size="10" fill="#58A6FF">HTTPS / REST API</text>
+
+  <path d="M 775 220 L 775 260" stroke="#3FB950" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="785" y="245" font-family="sans-serif" font-size="10" fill="#3FB950">Webhook (GET/POST)</text>
+
+  <!-- ── LAYER 2: FASTAPI BACKEND CORE ────────────────────────────────────────── -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="260" width="970" height="120" rx="14" fill="url(#backendGrad)"/>
+    <text x="60" y="285" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" letter-spacing="1">
+      ⚡ FastAPI Microservice Engine (Python 3.14 / Uvicorn Async)
+    </text>
+    
+    <!-- Subcomponents -->
+    <rect x="60" y="298" width="210" height="65" rx="8" fill="#0D1117" opacity="0.6"/>
+    <text x="165" y="323" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Security & Auth</text>
+    <text x="165" y="343" font-family="sans-serif" font-size="10" fill="#8B949E" text-anchor="middle">OAuth2 JWT • bcrypt • Firebase</text>
+
+    <rect x="290" y="298" width="220" height="65" rx="8" fill="#0D1117" opacity="0.6"/>
+    <text x="400" y="323" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Router & Middleware</text>
+    <text x="400" y="343" font-family="sans-serif" font-size="10" fill="#8B949E" text-anchor="middle">CORS • Logger • BackgroundTasks</text>
+
+    <rect x="530" y="298" width="220" height="65" rx="8" fill="#0D1117" opacity="0.6"/>
+    <text x="640" y="323" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Language Engine</text>
+    <text x="640" y="343" font-family="sans-serif" font-size="10" fill="#8B949E" text-anchor="middle">Detect & Translate (5 Locales)</text>
+
+    <rect x="770" y="298" width="220" height="65" rx="8" fill="#0D1117" opacity="0.6"/>
+    <text x="880" y="323" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Chat Memory Service</text>
+    <text x="880" y="343" font-family="sans-serif" font-size="10" fill="#8B949E" text-anchor="middle">Session Memory & History Sync</text>
+  </g>
+
+  <!-- Connection Arrows Down (Layer 2 -> Layer 3) -->
+  <path d="M 525 380 L 525 415" stroke="#A371F7" stroke-width="2.5"/>
+
+  <!-- ── LAYER 3: AGRICULTURAL AI SERVICES ────────────────────────────────────── -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="415" width="970" height="175" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+    <text x="60" y="437" font-family="sans-serif" font-size="12" font-weight="bold" fill="#8B949E" letter-spacing="1">
+      AGRICULTURAL INTELLIGENCE & SPEECH SERVICES LAYER
+    </text>
+
+    <!-- 7 Microservice Cards -->
+    <!-- Card 1: Disease -->
+    <rect x="55" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="117" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">🔬</text>
+    <text x="117" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Crop Disease</text>
+    <text x="117" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Scanner</text>
+    <text x="117" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Gemini Vision</text>
+    <text x="117" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Leaf Diagnosis</text>
+
+    <!-- Card 2: Weather -->
+    <rect x="192" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="254" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">🌦️</text>
+    <text x="254" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Weather</text>
+    <text x="254" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Dashboard</text>
+    <text x="254" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Open-Meteo API</text>
+    <text x="254" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Farming Advice</text>
+
+    <!-- Card 3: Mandi Rates -->
+    <rect x="329" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="391" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">💰</text>
+    <text x="391" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Market Mandi</text>
+    <text x="391" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Prices</text>
+    <text x="391" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Real-time Rates</text>
+    <text x="391" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Selling Advice</text>
+
+    <!-- Card 4: Schemes -->
+    <rect x="466" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="528" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">🏛️</text>
+    <text x="528" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Government</text>
+    <text x="528" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Schemes</text>
+    <text x="528" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">PM-KISAN / PMFBY</text>
+    <text x="528" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Subsidies Matcher</text>
+
+    <!-- Card 5: Soil Health -->
+    <rect x="603" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="665" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">🌱</text>
+    <text x="665" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Soil Health</text>
+    <text x="665" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Advisor</text>
+    <text x="665" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">pH Diagnosis</text>
+    <text x="665" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Bio Amendments</text>
+
+    <!-- Card 6: STT -->
+    <rect x="740" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="802" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">🎙️</text>
+    <text x="802" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">STT Voice</text>
+    <text x="802" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Transcription</text>
+    <text x="802" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Gemini Audio API</text>
+    <text x="802" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Speech To Text</text>
+
+    <!-- Card 7: TTS -->
+    <rect x="877" y="450" width="125" height="125" rx="8" fill="url(#serviceGrad)" stroke="#30363D"/>
+    <text x="939" y="475" font-family="sans-serif" font-size="20" text-anchor="middle">🔊</text>
+    <text x="939" y="498" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TTS Voice</text>
+    <text x="939" y="514" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Synthesis</text>
+    <text x="939" y="535" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">gTTS Engine</text>
+    <text x="939" y="550" font-family="sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Base64 MP3 Audio</text>
+  </g>
+
+  <!-- Connection Arrows Down (Layer 3 -> Layer 4) -->
+  <path d="M 525 590 L 525 620" stroke="#D29922" stroke-width="2.5" stroke-dasharray="4,4"/>
+
+  <!-- ── LAYER 4: EXTERNAL CLOUD PROVIDERS & DATABASES ────────────────────────── -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="620" width="970" height="110" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+    <text x="60" y="642" font-family="sans-serif" font-size="12" font-weight="bold" fill="#8B949E" letter-spacing="1">
+      EXTERNAL AI PROVIDERS & CLOUD INFRASTRUCTURE
+    </text>
+
+    <!-- Google Gemini AI -->
+    <rect x="60" y="655" width="220" height="60" rx="10" fill="url(#aiGrad)"/>
+    <text x="170" y="682" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🤖 Google Gemini 2.5</text>
+    <text x="170" y="700" font-family="sans-serif" font-size="10" fill="#E6EDF3" text-anchor="middle">Vision • Audio • Multilingual LLM</text>
+
+    <!-- Firebase -->
+    <rect x="305" y="655" width="210" height="60" rx="10" fill="#B25900"/>
+    <text x="410" y="682" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🔥 Firebase Cloud</text>
+    <text x="410" y="700" font-family="sans-serif" font-size="10" fill="#E6EDF3" text-anchor="middle">Authentication • Firestore Memory</text>
+
+    <!-- Open-Meteo & Agmarknet -->
+    <rect x="540" y="655" width="210" height="60" rx="10" fill="#1F6FEB"/>
+    <text x="645" y="682" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🌦️ Weather & Mandi APIs</text>
+    <text x="645" y="700" font-family="sans-serif" font-size="10" fill="#E6EDF3" text-anchor="middle">Open-Meteo • Agmarknet Data</text>
+
+    <!-- SQLite & Alembic -->
+    <rect x="775" y="655" width="215" height="60" rx="10" fill="#238636"/>
+    <text x="882" y="682" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">💾 Database & Alembic</text>
+    <text x="882" y="700" font-family="sans-serif" font-size="10" fill="#E6EDF3" text-anchor="middle">SQLite / PostgreSQL • Migrations</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "agrolith-ai-web",
+  "version": "1.0.0",
+  "description": "Agrolith-AI — Production Web Application for AI Agricultural Advisory & Farmer Assistance",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Building Agrolith-AI Web App...' && mkdir -p dist && cp -r index.html index.css app.js dist/ 2>/dev/null || copy index.html dist\\ && copy index.css dist\\ && copy app.js dist\\",
+    "start": "serve ."
+  },
+  "keywords": [
+    "agriculture",
+    "ai",
+    "farmer",
+    "fastapi",
+    "gemini",
+    "whatsapp"
+  ],
+  "author": "Agrolith-AI Team",
+  "license": "MIT"
+}
